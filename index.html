@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebMaxima</title>
+  </head>
+  <body>
+    <h1>WebMaxima</h1>
+    <textarea id="maxima_input" type="textcontent" name="maxima_input" cols="80" rows="20">
+integrate(x/(x^3 + 1), x);</textarea><br />
+    <input id="submit" type="submit" value="Execute" /><br />
+
+    <textarea id="maxima_output" disabled cols="80" rows="20"></textarea>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="readcgi.js"></script>
+  </body>
+</html>
