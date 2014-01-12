@@ -1,4 +1,4 @@
-$("#submit").click(function(){
+$("#maxima_submit").click(function(){
     $.ajax({
         type: "POST",
         url: "cgi-bin/webmaxima.cgi",
