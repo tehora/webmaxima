@@ -13,7 +13,7 @@ def main():
     form = cgi.FieldStorage()
     maxima_input = form.getvalue('maxima_input') or ""
 
-    maxima_output = subprocess.Popen(["maxima", "--very-quiet", "--init-mac=init.mac"],
+    maxima_output = subprocess.Popen(["maxima", "--very-quiet", "--init-mac=../init.mac"],
                                      stdin=subprocess.PIPE,
                                      stdout=subprocess.PIPE).communicate(maxima_input.encode())[0].decode()
     # ignore the warning in the first line (about the system() function redefinition)
